@@ -4,7 +4,7 @@
 
 
 
-This project has been develop in contest that is call Programathon - Costa Rica 2016
+This project has been developed in contest that is call Programathon - Costa Rica 2016
 
 
 
