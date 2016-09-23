@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+/*Comment de prueba, VidBrenes*/
 
 Route::get('/user', function (Request $request) {
     return $request->user();
