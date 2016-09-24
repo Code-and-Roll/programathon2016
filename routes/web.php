@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('content/index');
+  // return view('content/index');
+    return view('Registro/RedesSociales');/*Prueba de implementacion blade JJ*/
 });
 
 
