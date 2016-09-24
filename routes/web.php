@@ -18,9 +18,12 @@ Route::get('/', function () {
 Route::get('auth/login', 'AuthController@authenticate');
 Route::post('auth/login', 'AuthController@authenticate');
 Route::get('/login', function () {
-      return view('auth/login');
+      return view('auth/login',array('id'=>0));
 });
 
+Route::get('login/{id}', function($id){
+    return view('auth/login', array('id'=>$id));
+});
 
 Route::get('/navforms', function () {
     return view('/partials/navforms');

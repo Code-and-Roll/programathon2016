@@ -20,7 +20,7 @@ class AuthController extends Controller
             // Authentication passed...
               return redirect('/');
         }else{
-          return redirect('/login');
+          return redirect('/login/1');
         }
     }
 }
