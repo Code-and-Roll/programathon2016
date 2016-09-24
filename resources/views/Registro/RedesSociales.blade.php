@@ -9,7 +9,7 @@
             <div class="box-header with-border">
               <h3 class="box-title">Datos Sociales de la PYME</h3>
             </div>
-            <div class="box-body">
+            <div class="box-body" >
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-facebook"></i></span>
                 <input type="text" class="form-control" placeholder="Url perfil de Facebook" maxlength="300" required="Debe ingresas el url de su perfil de Facebook para continuar">
@@ -42,7 +42,7 @@
 
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                <input type="email" class="form-control" placeholder="correo electr&oacute;nico de contacto" maxlength="50">
+                <input type="email" class="form-control" placeholder="correo electr&oacute;nico de contacto" maxlength="50" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
               </div>
               <br>
 
