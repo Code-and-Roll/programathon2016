@@ -1,6 +1,5 @@
-@extends('partials.navforms')
 
-@section('informacionusuario')
+
  <div class="box box-info">
             <div class="box-header with-border">
               <h3 class="box-title">Datos Sociales de la PYME</h3>
@@ -43,7 +42,4 @@
               <br>
 
             </div>
-@endsection
-
-
-
+          </div>
