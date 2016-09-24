@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('content/index');
 });
+
+
+Route::get('/navforms', function () {
+    return view('/partials/navforms');
+});
+
+Route::get('/informacionusuario', function () {
+    return view('/Registro/InformacionUsuario');
+});
+
+
+/*Route::get('/', 'UserController@getInformacionUsuario');*/
+
+
