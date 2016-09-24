@@ -12,10 +12,28 @@
 */
 
 Route::get('/', function () {
-    return view('content/index');
+  // return view('content/index');
+    return view('Registro/RedesSociales');/*Prueba de implementacion blade JJ*/
 });
+<<<<<<< HEAD
 Route::get('auth/login', 'AuthController@authenticate');
 Route::post('auth/login', 'AuthController@authenticate');
 Route::get('/login', function () {
       return view('auth/login');
 });
+=======
+
+
+Route::get('/navforms', function () {
+    return view('/partials/navforms');
+});
+
+Route::get('/informacionusuario', function () {
+    return view('/Registro/InformacionUsuario');
+});
+
+
+/*Route::get('/', 'UserController@getInformacionUsuario');*/
+
+
+>>>>>>> 36e96a6a6837d5ade6fc509aae1e0f890385687a
