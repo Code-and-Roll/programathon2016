@@ -13,9 +13,8 @@
 
 Route::get('/', function () {
   // return view('content/index');
-    return view('Registro/RedesSociales');/*Prueba de implementacion blade JJ*/
+    return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
 });
-
 
 Route::get('auth/login', 'AuthController@authenticate');
 Route::post('auth/login', 'AuthController@authenticate');
@@ -34,6 +33,5 @@ Route::get('/informacionusuario', function () {
 });
 
 
-/*Route::get('/', 'UserController@getInformacionUsuario');*/
 
 
