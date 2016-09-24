@@ -13,7 +13,11 @@
                     Identificación de usuario
                 </h3>
             </div>
-
+            @if($id==1)
+              <div class="form-group has-error">
+                 <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> Datos incorrectos</label>
+              </div>
+            @endif
             <div class="panel-body" style="padding:30px">
 
               <form method="POST" action="/auth/login">

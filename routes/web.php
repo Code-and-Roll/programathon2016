@@ -13,15 +13,25 @@
 
 Route::get('/', function () {
   // return view('content/index');
+<<<<<<< HEAD
     return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
+=======
+    return view('partials/navforms');/*Prueba de implementacion blade JJ*/
+    //return view('Registro/RedesSociales');/*Prueba de implementacion blade JJ*/
+    //return view('Registro/InformacionUsuario');
+    //return view('Registro/InformacionPyme');
+>>>>>>> origin/master
 });
 
 Route::get('auth/login', 'AuthController@authenticate');
 Route::post('auth/login', 'AuthController@authenticate');
 Route::get('/login', function () {
-      return view('auth/login');
+      return view('auth/login',array('id'=>0));
 });
 
+Route::get('login/{id}', function($id){
+    return view('auth/login', array('id'=>$id));
+});
 
 
 Route::get('/navforms', function () {

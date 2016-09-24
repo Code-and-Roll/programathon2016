@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 
 <!-- Input addon -->
 
@@ -43,6 +47,10 @@
               </div>
               <br>
 
+<<<<<<< HEAD
             </div>
         
 
+=======
+            </div>  </div>
+>>>>>>> origin/master
