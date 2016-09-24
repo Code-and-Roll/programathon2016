@@ -1,7 +1,5 @@
 
-@extends('partials.navforms')
 
-@section('redessociales')
 
 <!-- Input addon -->
 
@@ -46,7 +44,4 @@
               </div>
               <br>
 
-            </div>
-        
-
-@endsection
+            </div>  </div>

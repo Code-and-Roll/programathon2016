@@ -13,7 +13,10 @@
 
 Route::get('/', function () {
   // return view('content/index');
-    return view('Registro/RedesSociales');/*Prueba de implementacion blade JJ*/
+    return view('partials/navforms');/*Prueba de implementacion blade JJ*/
+    //return view('Registro/RedesSociales');/*Prueba de implementacion blade JJ*/
+    //return view('Registro/InformacionUsuario');
+    //return view('Registro/InformacionPyme');
 });
 Route::get('auth/login', 'AuthController@authenticate');
 Route::post('auth/login', 'AuthController@authenticate');
