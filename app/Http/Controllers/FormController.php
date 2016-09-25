@@ -1,4 +1,24 @@
 <?php
+<<<<<<< HEAD
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+
+class FormController extends Controller
+{
+    public function registrarFormulario()
+	{
+		/*$user = new User;
+		$user->name = 'Juan';
+		$user->save();*/
+	
+
+		//return view('registro.Registro');
+	}
+=======
 namespace App\Http\Controllers;
 
 use App\Pais;
@@ -23,4 +43,5 @@ class FormController extends Controller
         return view('partials.navforms', ['estados' => $estados]);
 
     }
+>>>>>>> origin/master
 }
