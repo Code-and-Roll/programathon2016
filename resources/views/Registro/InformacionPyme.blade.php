@@ -115,15 +115,19 @@
                 @if($isActiva != 0)
                   <div class="form-group">
                     <div class="checkbox">
-                      <label>PYME Activa</label>
-                      <label>
-                        <input type="checkbox" value="true" name="PYMEactiva">
+
+                      <fieldset>
+
+                      <leyend>PYME Activa?</leyend>
+                        <label>
+                        <input type="radio" value="1" name="PYMEactiva">
                         Activa
-                      </label>
-                      <label>
-                        <input type="checkbox" value="false" name="PYMEactiva">
-                        Inactiva
-                      </label>
+                      </label></br>
+                        <label>
+                        <input type="radio" value="0" name="PYMEactiva">
+                      </label>Inactiva</br>
+
+                      </fieldset>
                     </div>
                   </div>
 
@@ -131,15 +135,18 @@
 
                               <div class="form-group">
                                 <div class="checkbox">
-                                  <label>Negocio Familiar?</label>
+
+                                  <fieldset>
+                                  <leyend>Negocio Familiar?</leyend></br>
                                   <label>
-                                    <input type="checkbox" name="PYMEfamiliar">
+                                    <input type="radio" value="1" name="PYMEfamiliar">
                                     Habilitado
-                                  </label>
+                                  </label></br>
 
                                   <label>
-                                    <input type="checkbox" name="PYMEfamiliar" checked="checked">
-                                  Deshabilitado</label>
+                                    <input type="radio" value="0" name="PYMEfamiliar" checked="checked">
+                                    Deshabilitado
+                                  </label></br>
                                 </div>
                               </div>
 
