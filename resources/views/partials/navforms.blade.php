@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 @extends('layouts.master')
 
 @section('content')
@@ -17,11 +16,10 @@
         <div class="tab-pane fade in active" id="informacionpyme">@include('Registro.InformacionPyme')</div>
         <div class="tab-pane fade" id="redessociales">@include('Registro.RedesSociales')</div>
         <div class="tab-pane fade" id="informacionusuario">@include('Registro.InformacionUsuario')</div>
+
     </div>
 </div>
 
-
->>>>>>> origin/master
 
 
 
