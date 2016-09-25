@@ -11,9 +11,18 @@
 |
 */
 
+
+   //return view('Registro.registro');
+//Route::get('/registro', 'FormController@registrarFormulario');
+
 Route::get('/registro', function () {
-   return view('Registro.registro');
-});
+   $data = Request::all();
+    return  $data;
+  });
+
+
+
+
 Route::get('/', function () {
   // return view('content/index');
 
