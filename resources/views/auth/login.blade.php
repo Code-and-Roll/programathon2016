@@ -23,8 +23,23 @@
               <form method="POST" action="/auth/login">
                 {!! csrf_field() !!}
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="EmailContacto" id="email" value="{{ old('email') }}" class="form-control">
+                        <label for="text">Nombre comercial</label>
+                        <input type="text" name="nombreComercial" id="nombreComercial" value="{{ old('nombreComercial') }}" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Nombre de usuario</label>
+                        <input type="text" name="nombre" id="nombre" value="{{ old('nombre') }}" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Pais</label>
+                        <select class="form-control" name="pais" id="pais"required="Debe seleccionar un pais" onchange="seleccionaEstados(this)">
+
+                          @foreach ($paises as $pais) {
+                            <option value="{{$pais->Id}}">{{$pais->Nombre}}</option>
+
+                          @endforeach
+
+                        </select>
                     </div>
 
                     <div class="form-group">
@@ -32,22 +47,23 @@
                         <input type="password" name="clave" id="password" class="form-control">
                     </div>
 
-					<div class="form-group">
-                        <label for="remember">
-                            <input type="checkbox" name="remember" id="remember">
-                            Recuérdame
-                        </label>
-                    </div>
+
 
                     <div class="form-group text-center">
                         <button type="submit" class="btn btn-primary" style="padding:8px 100px;margin-top:25px">
-                            Entrar
+                            Aceptar
                         </button>
-                        <a href="#" class="btn btn-primary" style="padding:8px 100px;margin-top:25px">
-                            Registrar
-                        </a>
-                    </div>
+                        <button type="submit" class="btn btn-primary" style="padding:8px 100px;margin-top:25px">
+                            Cancelar
+                        </button><br>
 
+                    </div>
+                    <a href="/navforms"  >
+                        Registrar
+                    </a><br>
+                    <a href="#"  >
+                        Olvide mi contrasenna
+                    </a>
                 </form>
 
             </div>

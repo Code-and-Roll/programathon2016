@@ -20,35 +20,15 @@ Route::get('/registro', function () {
     return  $data;
   });
 
+Route::get('/index', function () {
+      return view('content/index');
+  });
 
 
 
-Route::get('/', function () {
-  // return view('content/index');
 
-
-//    return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
-
-
-    //return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
-
-    return view('partials/navforms');/*Prueba de implementacion blade JJ*/
-
-   return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
-
-   // return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
-
-    //return view('partials/navforms');/*Prueba de implementacion blade JJ*/
-
-
-    //return view('Registro/RedesSociales');/*Prueba de implementacion blade JJ*/
-    //return view('Registro/InformacionUsuario');
-    //return view('Registro/InformacionPyme');
-
-});
-
-Route::get('/navforms','FormController@mostrarPaises');
-Route::post('/navforms','FormController@mostrarPaises');
+Route::get('/navforms','FormController@mostrarDatosFormulario');
+Route::post('/navforms','FormController@mostrarDatosFormulario');
 
 //Route::get('/navforms1','FormController@mostrarEstados');
 //Route::post('/navforms1','FormController@mostrarEstados');
@@ -56,17 +36,35 @@ Route::post('/navforms','FormController@mostrarPaises');
 //Route::get('/navforms2','FormController@mostrarSector');
 //Route::post('/navforms2','FormController@mostrarSector');
 
-Route::get('partials/navforms',array('isActiva'=>0));
+Route::post('storage/create', 'FormController@save');
+Route::get('storage/{archivo}', function ($archivo) {
+     $public_path = public_path();
+     $url = $public_path.'/storage/'.$archivo;
+     //verificamos si el archivo existe y lo retornamos
+     if (Storage::exists($archivo))
+     {
+       return response()->download($url);
+     }
+     //si no se encuentra lanzamos un error 404.
+     abort(404);
 
+});
+
+Route::get('partials/navforms',array('isActiva'=>0));
+Route::post('registro', 'FormController@save');
 Route::get('auth/login', 'AuthController@authenticate');
 Route::post('auth/login', 'AuthController@authenticate');
-Route::get('/login', function () {
+Route::post('/', 'AuthController@getLogin');
+Route::get('/', 'AuthController@getLogin');
+/*Route::get('/login', function () {
       return view('auth/login',array('id'=>0));
-});
+});*/
 
 Route::get('login/{id}', function($id){
     return view('auth/login', array('id'=>$id));
 });
+
+
 
 
 

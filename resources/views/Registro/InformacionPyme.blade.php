@@ -1,5 +1,6 @@
 
-   <form action="/registro" method="GET">
+   <form action="/registro" method="POST"  enctype="multipart/form-data">
+   {!! csrf_field() !!}
      <script>
 
           function seleccionaEstados(idPais){
@@ -104,7 +105,7 @@
 
                 <div class="form-group">
                   <label for="telefono">Tel&eacute;fono de la PYME</label>
-                  <input type="text" class="form-control" id="telefono"  maxlength="50" pattern="[0-9]" placeholder="Ingrese el numero de tel&eacute;fono de la PYME" required="Debe ingresar un tel&eacuote;fono para la PYME">
+                  <input type="text" class="form-control" id="telefono"  maxlength="50" placeholder="Ingrese el numero de tel&eacute;fono de la PYME" required="Debe ingresar un tel&eacuote;fono para la PYME">
                 </div>
 
                 <div class="form-group">
@@ -153,7 +154,7 @@
 
                                 <div class="form-group">
                                   <label for="subirLogo">Seleccione el archivo del Logo del PYME</label>
-                                  <input type="file" id="subirLogo" accept="*.gif,*.png" >
+                                  <input type="file" id="subirLogo" name="subirLogo" accept="*.gif,*.png" >
 
                                   <p class="help-block">Extensi&oacute;nes permitidas .gif, .png no m&aacute;s de 50 kb</p>
                                 </div>
@@ -163,5 +164,8 @@
 
 
                         </div>
-
+                        <div class="box-footer">
+                              <button type="submit" class="btn btn-default">Aceptar</button>
+                        </div>
+                      </form>
                           <!-- /.box -->
