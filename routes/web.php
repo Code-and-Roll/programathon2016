@@ -20,9 +20,10 @@ Route::get('/registro', function () {
     return  $data;
   });
 
-Route::get('/index', function () {
-      return view('content/index');
-  });
+      Route::get('/index', function () {
+        return view('content/index');
+      });
+
 
 
 
@@ -37,20 +38,9 @@ Route::post('/navforms','FormController@mostrarDatosFormulario');
 //Route::post('/navforms2','FormController@mostrarSector');
 
 Route::post('storage/create', 'FormController@save');
-Route::get('storage/{archivo}', function ($archivo) {
-     $public_path = public_path();
-     $url = $public_path.'/storage/'.$archivo;
-     //verificamos si el archivo existe y lo retornamos
-     if (Storage::exists($archivo))
-     {
-       return response()->download($url);
-     }
-     //si no se encuentra lanzamos un error 404.
-     abort(404);
-
-});
 
 Route::get('partials/navforms',array('isActiva'=>0));
+
 Route::post('registro', 'FormController@save');
 Route::get('auth/login', 'AuthController@authenticate');
 Route::post('auth/login', 'AuthController@authenticate');

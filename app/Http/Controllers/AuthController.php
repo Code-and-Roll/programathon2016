@@ -47,6 +47,7 @@ class AuthController extends Controller
                           ->where('usuario.Clave',$password)
                           ->where('pyme.NombreComercio',$nombreComercial)
                           ->where('estado.PaisID',$pais)->first();
+
                 }
         catch (Exception $e) {
                   return view('auth.login',array('paises' => $pais,'id'=>0));
