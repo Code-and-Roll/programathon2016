@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 @extends('layouts.master')
 
 @section('content')
@@ -19,6 +21,7 @@
 </div>
 
 
+>>>>>>> origin/master
 
 
 
