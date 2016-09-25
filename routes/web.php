@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,32 +27,26 @@ Route::get('/registro', function () {
 
 
 
-<<<<<<< HEAD
 
 
 Route::get('/navforms','FormController@mostrarDatosFormulario');
 Route::post('/navforms','FormController@mostrarDatosFormulario');
-=======
+
 Route::get('/', function () {
    return view('content/index');
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 51061e1e7f49a045e9da2e2148cf14d8e3df1376
+
 //    return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
 
 
     //return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
 
-<<<<<<< HEAD
-=======
     return view('partials/navforms');/*Prueba de implementacion blade JJ*/
 
    return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
 
->>>>>>> 51061e1e7f49a045e9da2e2148cf14d8e3df1376
    // return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
 
     //return view('partials/navforms');/*Prueba de implementacion blade JJ*/
@@ -65,7 +60,7 @@ Route::get('/', function () {
 
 Route::get('/navforms','FormController@mostrarPaises');
 Route::post('/navforms','FormController@mostrarPaises');
->>>>>>> e40035f9df5be04aae57c8fb67422231e0474dae
+
 
 //Route::get('/navforms1','FormController@mostrarEstados');
 //Route::post('/navforms1','FormController@mostrarEstados');

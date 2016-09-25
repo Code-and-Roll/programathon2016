@@ -1,6 +1,5 @@
 
-   <form action="/registro" method="POST"  enctype="multipart/form-data">
-   {!! csrf_field() !!}
+
      <script>
 
           function seleccionaEstados(idPais){

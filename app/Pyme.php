@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class pyme extends Model
 {
-  protected $table = 'pyme'
+  protected $table = 'pyme';
   public $timestamps = false;
 }
