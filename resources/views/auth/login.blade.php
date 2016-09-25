@@ -24,11 +24,11 @@
                 {!! csrf_field() !!}
                     <div class="form-group">
                         <label for="text">Nombre comercial</label>
-                        <input type="text" name="nombreComercial" id="nombreComercial" value="{{ old('nombreComercial') }}" class="form-control">
+                        <input type="text" required="Debe ingresar su nombre comercial" maxlength="50" name="nombreComercial" id="nombreComercial" value="{{ old('nombreComercial') }}" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="text">Nombre de usuario</label>
-                        <input type="text" name="nombre" id="nombre" value="{{ old('nombre') }}" class="form-control">
+                        <input type="text" name="nombre" id="nombre" required="Debe ingresar su nombre de usuario" maxlength="50" value="{{ old('nombre') }}" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="text">Pais</label>
@@ -44,7 +44,7 @@
 
                     <div class="form-group">
                         <label for="password">Contraseña</label>
-                        <input type="password" name="clave" id="password" class="form-control">
+                        <input type="password" name="clave" id="password" required="Debe ingresar su password" maxlength="10" maxlength="8"  class="form-control">
                     </div>
 
 
