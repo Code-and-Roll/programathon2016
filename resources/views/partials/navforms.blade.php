@@ -21,7 +21,10 @@
 </div>
 
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 9cea4577a90f3e4311a70e2eafb9623f2b11a60d
 
 @endsection
