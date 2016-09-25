@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class sector extends Model
 {
-  protected $table = 'sector'
+  protected $table = 'sector';
   public $timestamps = false;
 }

@@ -26,20 +26,20 @@ Route::get('/registro', function () {
 Route::get('/', function () {
   // return view('content/index');
 
-<<<<<<< HEAD
+
 //    return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
 
 
     //return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
 
     return view('partials/navforms');/*Prueba de implementacion blade JJ*/
-=======
+
    return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
 
    // return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
 
     //return view('partials/navforms');/*Prueba de implementacion blade JJ*/
->>>>>>> 9cea4577a90f3e4311a70e2eafb9623f2b11a60d
+
 
     //return view('Registro/RedesSociales');/*Prueba de implementacion blade JJ*/
     //return view('Registro/InformacionUsuario');
@@ -49,6 +49,13 @@ Route::get('/', function () {
 
 Route::get('/navforms','FormController@mostrarPaises');
 Route::post('/navforms','FormController@mostrarPaises');
+
+//Route::get('/navforms1','FormController@mostrarEstados');
+//Route::post('/navforms1','FormController@mostrarEstados');
+
+//Route::get('/navforms2','FormController@mostrarSector');
+//Route::post('/navforms2','FormController@mostrarSector');
+
 Route::get('partials/navforms',array('isActiva'=>0));
 
 Route::get('auth/login', 'AuthController@authenticate');

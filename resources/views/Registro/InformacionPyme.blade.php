@@ -1,5 +1,35 @@
 
    <form action="/registro" method="GET">
+     <script>
+
+          function seleccionaEstados(idPais){
+            var seleccionado = document.getElementById('pais').value;
+            var combo ='<select class="form-control"  required="Debe seleccionar una provincia">';
+            var provincias =[
+             @foreach ($estados as $estado)
+                  '{{$estado->Nombre}}',
+             @endforeach
+             ,'0'];
+             var idProvincias =[
+              @foreach ($estados as $estado)
+                   '{{$estado->Id}}',
+              @endforeach
+              ,'0'];
+              var paisId =[
+               @foreach ($estados as $estado)
+                    '{{$estado->PaisID}}',
+               @endforeach
+               ,'0'];
+               for(i=0;i<paisId.length;i++){
+                 if(paisId[i]==seleccionado){
+                   combo+='<option value="'+provincias[i]+'">'+provincias[i]+'</option>';
+                 }
+
+               }
+               combo+='</select>';
+               $("#combo1").html(combo);
+          }
+     </script>
 <div class="box box-primary">
             <div class="box-header with-border">
               <h3 class="box-title">Datos de la PYME</h3>
@@ -16,10 +46,10 @@
 
                 <div class="form-group">
                   <label>Seleccione el Pais</label>
-                  <select class="form-control" required="Debe seleccionar un pais" onchange="">
+                  <select class="form-control" id="pais"required="Debe seleccionar un pais" onchange="seleccionaEstados(this)">
 
                     @foreach ($paises as $pais) {
-                      <option value="{{$pais}}">{{$pais->Nombre}}</option>
+                      <option value="{{$pais->Id}}">{{$pais->Nombre}}</option>
 
                     @endforeach
 
@@ -28,18 +58,21 @@
 
                 <div class="form-group">
                   <label>Seleccione la Provincia</label>
-                  <select class="form-control"  required="Debe seleccionar una provincia">
-                    <option>Base de Datos</option>
-                    <option>Base de datos</option>
 
-                  </select>
+                    <div id="combo1">
+                        <select class="form-control"  required="Debe seleccionar una provincia"></select>
+                    </div>
+
                 </div>
 
                 <div class="form-group">
                   <label>Seleccione el Sector</label>
                   <select class="form-control"  required="Debe seleccionar un Sector">
-                    <option>Base de Datos</option>
-                    <option>Base de datos</option>
+
+                    @foreach ($sectores as $sector) {
+                      <option value="{{$sector->Nombre}}">{{$sector->Nombre}}</option>
+
+                    @endforeach
 
                   </select>
                 </div>
@@ -62,8 +95,10 @@
                 <div class="form-group">
                   <label>Seleccione su G&eacuote;nero</label>
                   <select class="form-control"  required="Debe seleccionar un genero">
-                    <option>Base de Datos</option>
-                    <option>Base de datos</option>
+                    @foreach ($generos as $genero) {
+                      <option value="{{$genero->Nombre}}">{{$genero->Nombre}}</option>
+
+                    @endforeach
                   </select>
                 </div>
 
