@@ -6,7 +6,7 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-<<<<<<< HEAD
+
             <form role="form" >
               <div class="box-body">
                 <div class="form-group">
@@ -16,14 +16,12 @@
 
                 <div class="form-group">
                   <label>Seleccione el Pais</label>
-                  <select class="form-control" required="Debe seleccionar un pais" >
+                  <select class="form-control" required="Debe seleccionar un pais" onchange="">
 
                     @foreach ($paises as $pais) {
                       <option value="{{$pais}}">{{$pais->Nombre}}</option>
 
                     @endforeach
-                    <option>Base de datos</option>
-                    <option>Base de datos</option>
 
                   </select>
                 </div>
@@ -78,7 +76,7 @@
                   <label for="direccion">Direcci&oacute;n de la PYME</label>
                   <input type="text" class="form-control" id="direccion"  maxlength="200" placeholder="Ingrese la direcci&oacute;n de la PYME" required="Debe ingresar la direcci&oacute;n de la PYME">
                 </div>
-=======
+
 
               <div class="box-body">
                   <div class="form-group">
@@ -145,7 +143,7 @@
                     <label for="direccion">Direcci&oacute;n de la PYME</label>
                     <input type="text" class="form-control" id="direccion"  maxlength="200" placeholder="Ingrese la direcci&oacute;n de la PYME" required="Debe ingresar la direcci&oacute;n de la PYME">
                   </div>
->>>>>>> 9cea4577a90f3e4311a70e2eafb9623f2b11a60d
+
 
                 @if($isActiva != 0)
                   <div class="form-group">

@@ -1,13 +1,4 @@
 
-<<<<<<< HEAD
-<!-- Input addon -->
-
-
-=======
-
-<!-- Input addon -->
-
->>>>>>> 9cea4577a90f3e4311a70e2eafb9623f2b11a60d
        <div class="box box-info">
               <div class="box-header with-border">
                 <h3 class="box-title">Datos Sociales de la PYME</h3>
@@ -48,12 +39,8 @@
                   <input type="email" class="form-control" placeholder="correo electr&oacute;nico de contacto" maxlength="50" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
                 </div>
               <br>
-           
+
 
             </div>
-<<<<<<< HEAD
+
           </div>
-=======
-        
-            </div> 
->>>>>>> 9cea4577a90f3e4311a70e2eafb9623f2b11a60d
