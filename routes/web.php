@@ -13,19 +13,23 @@
 
 Route::get('/', function () {
   // return view('content/index');
-<<<<<<< HEAD
-    return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
-=======
-<<<<<<< HEAD
-    return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
-=======
+
+//    return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
+
+
+    //return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
+
     return view('partials/navforms');/*Prueba de implementacion blade JJ*/
->>>>>>> 21be53d1a6836d6b9f096d8e7ea808039afb7e9a
+
     //return view('Registro/RedesSociales');/*Prueba de implementacion blade JJ*/
     //return view('Registro/InformacionUsuario');
     //return view('Registro/InformacionPyme');
->>>>>>> origin/master
+
 });
+
+Route::get('/navforms','FormController@mostrarPaises');
+Route::post('/navforms','FormController@mostrarPaises');
+Route::get('partials/navforms',array('isActiva'=>0));
 
 Route::get('auth/login', 'AuthController@authenticate');
 Route::post('auth/login', 'AuthController@authenticate');
@@ -38,14 +42,8 @@ Route::get('login/{id}', function($id){
 });
 
 
-Route::get('/navforms', function () {
-    return view('/partials/navforms');
-});
+
 
 Route::get('/informacionusuario', function () {
     return view('/Registro/InformacionUsuario');
 });
-
-
-
-

@@ -6,7 +6,7 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form">
+            <form role="form" >
               <div class="box-body">
                 <div class="form-group">
                   <label for="nombreComercialPYME">Nombre comercial de la PYME</label>
@@ -15,7 +15,12 @@
 
                 <div class="form-group">
                   <label>Seleccione el Pais</label>
-                  <select class="form-control" required="Debe seleccionar un pais">
+                  <select class="form-control" required="Debe seleccionar un pais" >
+
+                    @foreach ($paises as $pais) {
+                      <option value="{{$pais}}">{{$pais->Nombre}}</option>
+
+                    @endforeach
                     <option>Base de datos</option>
                     <option>Base de datos</option>
 

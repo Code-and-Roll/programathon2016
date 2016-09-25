@@ -1,14 +1,7 @@
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
-
 <!-- Input addon -->
 
->>>>>>> 21be53d1a6836d6b9f096d8e7ea808039afb7e9a
+
        <div class="box box-info">
             <div class="box-header with-border">
               <h3 class="box-title">Datos Sociales de la PYME</h3>
@@ -50,15 +43,5 @@
               </div>
               <br>
 
-<<<<<<< HEAD
             </div>
           </div>
-=======
-<<<<<<< HEAD
-            </div>
-        
-
-=======
-            </div>  </div>
->>>>>>> origin/master
->>>>>>> 21be53d1a6836d6b9f096d8e7ea808039afb7e9a
