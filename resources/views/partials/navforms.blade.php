@@ -16,9 +16,15 @@
         <div class="tab-pane fade in active" id="informacionpyme">@include('Registro.InformacionPyme')</div>
         <div class="tab-pane fade" id="redessociales">@include('Registro.RedesSociales')</div>
         <div class="tab-pane fade" id="informacionusuario">@include('Registro.InformacionUsuario')</div>
+
     </div>
 </div>
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 9cea4577a90f3e4311a70e2eafb9623f2b11a60d
 
 @endsection

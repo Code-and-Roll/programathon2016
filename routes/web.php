@@ -11,15 +11,26 @@
 |
 */
 
+Route::get('/registro', function () {
+   return view('Registro.registro');
+});
 Route::get('/', function () {
   // return view('content/index');
 
+<<<<<<< HEAD
 //    return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
 
 
     //return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
 
     return view('partials/navforms');/*Prueba de implementacion blade JJ*/
+=======
+   return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
+
+   // return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
+
+    //return view('partials/navforms');/*Prueba de implementacion blade JJ*/
+>>>>>>> 9cea4577a90f3e4311a70e2eafb9623f2b11a60d
 
     //return view('Registro/RedesSociales');/*Prueba de implementacion blade JJ*/
     //return view('Registro/InformacionUsuario');
