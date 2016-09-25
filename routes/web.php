@@ -13,13 +13,8 @@
 
 
    //return view('Registro.registro');
-//Route::get('/registro', 'FormController@registrarFormulario');
-
-Route::get('/registro', function () {
-   $data = Request::all();
-    return  $data;
-  });
-
+Route::get('/registro', 'FormController@registrarFormulario');
+Route::post('/registro', 'FormController@registrarFormulario');
 
 
 
@@ -32,7 +27,7 @@ Route::get('/', function () {
 
     //return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
 
-    return view('partials/navforms');/*Prueba de implementacion blade JJ*/
+   // return view('partials/navforms');/*Prueba de implementacion blade JJ*/
 
    return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
 
