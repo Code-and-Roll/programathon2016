@@ -1,8 +1,4 @@
 
-
-
-<!-- Input addon -->
-
        <div class="box box-info">
             <div class="box-header with-border">
               <h3 class="box-title">Datos Sociales de la PYME</h3>
@@ -44,4 +40,5 @@
               </div>
               <br>
 
-            </div>  </div>
+            </div>
+          </div>
