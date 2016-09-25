@@ -11,18 +11,38 @@
 |
 */
 
+
+   //return view('Registro.registro');
+//Route::get('/registro', 'FormController@registrarFormulario');
+
 Route::get('/registro', function () {
-   return view('Registro.registro');
-});
+   $data = Request::all();
+    return  $data;
+  });
+
+
+
+
 Route::get('/', function () {
    return view('content/index');
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 51061e1e7f49a045e9da2e2148cf14d8e3df1376
 //    return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
 
 
     //return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
 
+<<<<<<< HEAD
+=======
+    return view('partials/navforms');/*Prueba de implementacion blade JJ*/
+
+   return view('partials/navforms',array('isActiva'=>0));/*Prueba de implementacion blade JJ*/
+
+>>>>>>> 51061e1e7f49a045e9da2e2148cf14d8e3df1376
    // return view('Registro/InformacionUsuario');/*Prueba de implementacion blade JJ*/
 
     //return view('partials/navforms');/*Prueba de implementacion blade JJ*/
@@ -36,6 +56,13 @@ Route::get('/', function () {
 
 Route::get('/navforms','FormController@mostrarPaises');
 Route::post('/navforms','FormController@mostrarPaises');
+
+//Route::get('/navforms1','FormController@mostrarEstados');
+//Route::post('/navforms1','FormController@mostrarEstados');
+
+//Route::get('/navforms2','FormController@mostrarSector');
+//Route::post('/navforms2','FormController@mostrarSector');
+
 Route::get('partials/navforms',array('isActiva'=>0));
 
 Route::get('auth/login', 'AuthController@authenticate');
